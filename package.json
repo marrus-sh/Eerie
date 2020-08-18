@@ -1,0 +1,30 @@
+{
+  "name": "eerie-rfc3987",
+  "version": "1.0.1",
+  "author": {
+    "name": "Kyebego",
+    "url": "https://go.KIBI.family/"
+  },
+  "license": "GPL-3.0-or-later",
+  "description": "👂👁 A RegExp‐based IRI parser.",
+  "homepage": "https://github.com/marrus-sh/Eerie#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrus-sh/Eerie.git"
+  },
+  "bugs": "https://github.com/marrus-sh/Eerie/issues",
+  "devDependencies": {
+    "Roost": "git+https://github.com/marrus-sh/Roost.git#0.1.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1"
+  },
+  "directories": {
+    "lib": "./Build",
+    "test": "./Tests"
+  },
+  "browser": "Build/Eerie.js",
+  "scripts": {
+    "prepare": "cake build",
+    "test": "mocha --require coffeescript/register \"./Tests/*.coffee\""
+  }
+}
